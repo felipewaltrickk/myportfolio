@@ -35,7 +35,7 @@ export const Experiences = () => {
   const [selectedCompany, setSelectedCompany] = useState(companies[0])
 
   return (
-    <div className={styles.experiencesContainer}>
+    <div className={styles.experiencesContainer} id='experiences'>
       <div className={styles.firstRow}>
         <div className={styles.mainTexts}>
           <h2>I design websites, apps <br />

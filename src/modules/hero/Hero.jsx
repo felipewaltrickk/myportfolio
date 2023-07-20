@@ -74,7 +74,10 @@ export const Hero = () => {
           turn their ideas into products people love to use.
         </p>
       </div>
-      <div className="scroll">Let's connect</div>
+      <a className={styles.Scroll} href='#experiences'>
+        <div className={styles.Wheel}>
+        </div>
+      </a>
     </div>
   )
 }

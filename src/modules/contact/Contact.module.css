@@ -13,29 +13,30 @@ footer {
     width: 100%;
     bottom: 0;
     background: linear-gradient(#10151B, #10151B);
-    color: #fff;
-    padding: 6.25rem 0 1rem;
+    color: #EAEAEA;
     font-size: 0.8125rem;
     line-height: 1.25rem;
+    padding: 5.625rem 10.75rem;
 }
+
+.copyright p {
+    color: #EAEAEA;
+    font-size: 12px;
+    font-family: Inter;
+    font-weight: 400;
+    vertical-align: bottom;
+}
+
 
 .row {
-    width: 85%;
-    margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
-.col {
-    flex-basis: 25%;
-    padding: 0.625rem;
-}
-
-.col:nth-child(2),
 .col:nth-child(3) {
-    flex-basis: 15%;
+    width: 272px;
+
 }
 
 .col h3 {
@@ -53,7 +54,6 @@ footer {
     width: fit-content;
     border-bottom: 0.0625rem solid #ccc;
     margin: 1.25rem 0;
-
 }
 
 ul li {
@@ -101,21 +101,25 @@ form button .fas {
 }
 
 hr {
-    width: 90%;
+    width: 84%;
     border: 0;
     border-bottom: 0.0625rem solid #1B222B;
     margin: 20px auto;
 }
 
-.copyright {
-    color: #EAEAEA;
-    font-size: 0.625rem;
+.contactInfo {
+    text-align: right;
+    white-space: pre-line;
+}
+
+.centeredText {
+    text-align: center;
 }
 
 .underline {
     width: 100%;
     height: 0.125rem;
-    background: #1B222B;
+    background: #1b222b;
     border-radius: 0.1875rem;
     position: absolute;
     top: 1.5625rem;
@@ -126,7 +130,7 @@ hr {
 .underline span {
     width: 0.9375rem;
     height: 100%;
-    background: #EAEAEA;
+    background: #eaeaea;
     border-radius: 0.1875rem;
     position: absolute;
     top: 0;
@@ -143,194 +147,4 @@ hr {
 .group {
     position: relative;
     margin-bottom: 2rem;
-}
-
-.Input {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #EAEAEA;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #1A232E;
-}
-
-.Input:focus {
-    outline: none;
-}
-
-.TextArea {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 16px;
-    color: #EAEAEA;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #1A232E;
-    background: transparent;
-    resize: none;
-    color: #FFF;
-}
-
-.TextArea:focus {
-    outline: none;
-}
-
-/* LABEL ======================================= */
-.Label {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 14px;
-    color: #7C7C7C;
-    position: absolute;
-    pointer-events: none;
-    left: 5px;
-    top: 10px;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-}
-
-/* active state */
-.Input:focus~.Label,
-.Input:valid~.Label {
-    top: -20px;
-    font-size: 14px;
-    color: #5264AE;
-}
-
-.TextArea:focus~.Label,
-.TextArea:valid~.Label {
-    top: -20px;
-    font-size: 14px;
-    color: #467EE7;
-}
-
-/* BOTTOM BARS ================================= */
-.bar {
-    position: relative;
-    display: block;
-    width: 300px;
-}
-
-.bar:before,
-.bar:after {
-    content: '';
-    height: 2px;
-    width: 0;
-    bottom: 1px;
-    position: absolute;
-    background: #5264AE;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-}
-
-.bar:before {
-    left: 50%;
-}
-
-.bar:after {
-    right: 50%;
-}
-
-/* active state */
-.Input:focus~.bar:before,
-.Input:focus~.bar:after {
-    width: 50%;
-}
-
-/* active state */
-.TextArea:focus~.bar:before,
-.TextArea:focus~.bar:after {
-    width: 50%;
-}
-
-/* HIGHLIGHTER ================================== */
-.highlight {
-    position: absolute;
-    height: 60%;
-    width: 100px;
-    top: 25%;
-    left: 0;
-    pointer-events: none;
-    opacity: 0.5;
-}
-
-/* active state */
-.Input:focus~.highlight {
-    -webkit-animation: inputHighlighter 0.3s ease;
-    -moz-animation: inputHighlighter 0.3s ease;
-    animation: inputHighlighter 0.3s ease;
-}
-
-/* active state */
-.TextArea:focus~.highlight {
-    -webkit-animation: inputHighlighter 0.3s ease;
-    -moz-animation: inputHighlighter 0.3s ease;
-    animation: inputHighlighter 0.3s ease;
-}
-
-/* ANIMATIONS ================ */
-@-webkit-keyframes inputHighlighter {
-    from {
-        background: #5264AE;
-    }
-
-    to {
-        width: 0;
-        background: transparent;
-    }
-}
-
-@-moz-keyframes inputHighlighter {
-    from {
-        background: #5264AE;
-    }
-
-    to {
-        width: 0;
-        background: transparent;
-    }
-}
-
-@keyframes inputHighlighter {
-    from {
-        background: #5264AE;
-    }
-
-    to {
-        width: 0;
-        background: transparent;
-    }
-}
-
-@keyframes moving {
-    0% {
-        left: -1.25rem;
-
-    }
-
-    100% {
-        left: 100%;
-    }
-}
-
-@media (max-width: 43.75rem) {
-    footer {
-        bottom: unset;
-    }
-
-    .col {
-        flex-basis: 100%;
-    }
-
-    .col:nth-child(2),
-    .col:nth-child(3) {
-        flex-basis: 100%;
-    }
 }

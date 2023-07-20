@@ -15,6 +15,7 @@ import { Bradesco4 } from './modules/bradesco4/Bradesco4'
 import { Escriba1 } from './modules/escriba1/Escriba1'
 import { Escriba2 } from './modules/escriba2/Escriba2'
 import { End } from './modules/end/End'
+import { Tabs } from './modules/tabs/Tabs'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +26,7 @@ function App() {
       <Experiences />
       <AboutMe />
       <Recomendations />
+      <Tabs />
       <Robodoc />
       <Bradesco1 />
       <Bradesco2 />

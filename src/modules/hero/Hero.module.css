@@ -84,3 +84,38 @@
 .mainContent p span {
     color: #C12742;
 }
+
+.Scroll {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 50px;
+    border: .5px solid #FFF;
+    border-radius: 32px;
+    align-items: center;
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+.Wheel {
+    flex-direction: column;
+    width: 10px;
+    height: 10px;
+    border: .5px solid #FFF;
+    /*background-color: #fff;*/
+    border-radius: 100%;
+    animation: mouse 1.5s infinite ease-in-out;
+    position: relative;
+}
+
+@keyframes mouse {
+    from {
+        top: 0px;
+        opacity: 0;
+    }
+
+    to {
+        top: 16px;
+        opacity: 1;
+    }
+}

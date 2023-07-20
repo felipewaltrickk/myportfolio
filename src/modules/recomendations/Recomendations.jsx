@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Recomendations.module.css'
 import recomendation1 from '../../assets/img/recomendations/alexandre.png'
-import backgroundRadialEffect from '../../assets/img/elipse.png'
+import imgElipse from '../../assets/img/recomendations/elipse.svg'
 
 export const Recomendations = () => {
+    const [rotation, setRotation] = useState(0);
+
+    useEffect(() => {
+        window.addEventListener("touchmove", handleScroll, { passive: false });
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("touchmove", handleScroll, { passive: false });
+        };
+    }, []);
+
+    function handleScroll() {
+        const scrollPosition = window.scrollY / 20;
+        setRotation(scrollPosition);
+        console.log(scrollPosition);
+    }
     return (
         <div className={styles.RecomendationsContainer}>
             <div className={styles.RecomendationsCaroussel}>
@@ -30,17 +47,21 @@ export const Recomendations = () => {
             </div>
             <div className={styles.RecomendationsInsideCard}>
                 <div className={styles.RecomendationsExperienceLeft}>
-                    <strong>READY TO START?</strong>
-                    <h2>Thousands of people <br />
-                        have used the <br />
-                        products I helped <br />
-                        to build
+                    <strong>FROM VISION TO MILLIONS</strong>
+                    <h2>Thousands of users empowered by the products I helped to build
                     </h2>
-                    <p>I can work with all sorts of frameworks and applications. I am <br />
-                        Versatile in working on diverse types of digital products, such <br />
-                        as Native IOS apps, Native Android apps design and WPA.
+                    <p>I am versatile in working with all sorts of frameworks and applications, including Native iOS and Android design, as well as WPA.
                     </p>
                 </div>
+                <div>
+                    <div className={styles.yearsExperience}>
+                        <strong>ABC</strong>
+                    </div>
+                    <div className={styles.imgRotate} style={{ transform: `rotate(${rotation}deg)` }} >
+                        <img src={imgElipse} alt="" />
+                    </div>
+                </div>
+
             </div>
         </div>
     )
