@@ -1,0 +1,357 @@
+.EndContainer {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: #10151B;
+    padding-left: 10.75rem;
+    margin-right: 10.75rem;
+}
+
+.EndLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Icon svg {
+    fill: white;
+}
+
+.Body .Button {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #151B22;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 px 10px 10px;
+    rgba: (0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+.Body .Button:hover {
+    width: 140px;
+}
+
+.Icon {
+    padding-top: 4px;
+}
+
+.Body .Button .Icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    transition: all 0.3s ease-out;
+}
+
+.Body .Button:nth-child(1):hover .Icon {
+    background: #DB4539;
+}
+
+.Body .Button:nth-child(2):hover .Icon {
+    background: #0e76a8;
+}
+
+.Body .Button:nth-child(3):hover .Icon {
+    background: #ED4989;
+}
+
+.Body .Button:nth-child(4):hover .Icon {
+    background: #F05133;
+}
+
+.Body .Button .Icon i {
+    font-size: 25px;
+    line-height: 50px;
+    transition: all 0.3s ease-out;
+}
+
+.Body.Button:hover .Icon i {
+    font-size: 25px;
+    line-height: 50px;
+    transition: all 0.3s ease-out;
+}
+
+.Body.Button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.Body .Button:nth-child(1) span {
+    color: #B8B8B8;
+}
+
+.Body .Button:nth-child(2) span {
+    color: #B8B8B8;
+}
+
+.Body .Button:nth-child(3) span {
+    color: #B8B8B8;
+}
+
+.Body .Button:nth-child(4) span {
+    color: #B8B8B8;
+}
+
+
+.EndRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 10.75rem;
+}
+
+.EndLeft h2 {
+    font-family: 'Sora';
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.EndLeft p {
+    margin-top: 2.5rem;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    color: #EAEAEA;
+    max-width: 472px;
+}
+
+.FilledButton {
+    background-color: #467EE7;
+    color: white;
+    padding: 0.75rem 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    font-family: 'Sora';
+    font-weight: 400;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.FilledButton:hover {
+    background-color: #3F6DE4;
+}
+
+
+
+.ContactComponent {
+    background-color: #151B22;
+    border-radius: 1.5rem;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+}
+
+.ContactComponent h3 {
+    margin-top: 0.5rem;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    color: #EAEAEA;
+}
+
+.ContactComponent p {
+    margin-top: 1rem;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #7C7C7C;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.Input {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #EAEAEA;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #1A232E;
+}
+
+.Input:focus {
+    outline: none;
+}
+
+.TextArea {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #EAEAEA;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #1A232E;
+    background: transparent;
+    resize: none;
+    color: #FFF;
+}
+
+.TextArea:focus {
+    outline: none;
+}
+
+/* LABEL ======================================= */
+.Label {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    color: #7C7C7C;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.Input:focus~.Label,
+.Input:valid~.Label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+.TextArea:focus~.Label,
+.TextArea:valid~.Label {
+    top: -20px;
+    font-size: 14px;
+    color: #467EE7;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+    position: relative;
+    display: block;
+    width: 300px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+/* active state */
+.Input:focus~.bar:before,
+.Input:focus~.bar:after {
+    width: 50%;
+}
+
+/* active state */
+.TextArea:focus~.bar:before,
+.TextArea:focus~.bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+.Input:focus~.highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* active state */
+.TextArea:focus~.highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}

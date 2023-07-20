@@ -1,0 +1,145 @@
+.experiencesContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 6.5rem 10.75rem;
+}
+
+.firstRow {
+    display: flex;
+}
+
+.mainTexts {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainTexts h2 {
+    font-family: 'Sora';
+    font-weight: 700;
+    font-size: 3.125rem;
+}
+
+.mainTexts small {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.setaHolder {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.companies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    row-gap: 2rem;
+    column-gap: 2.5rem;
+    margin: 5rem 0;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8.75rem;
+    background-color: #313133;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.company:hover {
+   background-color: #484848;
+}
+
+.company img {
+    width: 60%;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    background: #151B22;
+    border-radius: 1rem;
+    padding: 1.25rem 2.75rem;
+}
+
+.sliderHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sliderTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.sliderTitle strong {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #F8F7F1;
+}
+
+.sliderTitle small {
+    margin-top: 0.25rem;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #A8A8A8;
+}
+
+.sliderRole {
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #F8F7F1;
+}
+
+.sliderDescription {
+    margin-top: 1.5rem;
+    font-family: 'Inter';
+    font-size: 0.875rem;
+    color: #A8A8A8;
+}
+
+.bradesco {
+    background: linear-gradient(115.37deg, #C12742 34.02%, #493174 92.44%);
+}
+
+.escriba {
+    background: linear-gradient(113.64deg, #E4B32F 19.58%, #FED439 51.67%);
+}
+
+.crdc {
+    background: linear-gradient(90deg, #0095CF 0%, #005090 100%);
+}
+
+.neoConsig {
+    background: linear-gradient(113.64deg, #516AC5 19.58%, #41CEE1 84.55%);
+}
+
+.saasTec {
+    background: linear-gradient(90deg, #FFF 0%, #FFF 100%);
+}
+
+.theBridge {
+    background: linear-gradient(90deg, #16D8ED 0%, #16D8ED 100%);
+}
+
+.mxnTech {
+    background: linear-gradient(90deg, #FFF 0%, #FFF 100%);
+}
+
+.tradeNaMao {
+    background: linear-gradient(115.37deg, #50B4CB 34.02%, #BF72FC 98.83%);
+    
+}

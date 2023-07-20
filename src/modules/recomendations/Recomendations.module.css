@@ -1,0 +1,138 @@
+.RecomendationsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 89.3125rem;
+    padding-left: 4.375rem;
+    padding-right: 4.375rem;
+    background: linear-gradient(180deg, #8B47F8 0%, #48039E 100%);
+    border-radius: 41px 40px 0px 0px;
+}
+
+.RecomendationsCaroussel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ImgPessoa {
+    margin-bottom: 2.5rem;
+}
+
+.RecomendationsCaroussel h2 {
+    font-family: 'Sora';
+    font-weight: 700;
+    font-size: 2.1875rem;
+    color: #FFFFFF;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.RecomendationsCaroussel p {
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 0.9375rem;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 46.5625rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.RecomendationsCaroussel strong {
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0.375rem;
+}
+
+.RecomendationsCaroussel small {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #E6D5FF;
+    margin-bottom: 1.875rem;
+}
+
+.RecomendationsInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RecomendationsInsideCard {
+    background: linear-gradient(179.93deg, #1B0040 0.06%, rgba(27, 0, 64, 0) 94.63%);
+    border-radius: 3rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.RecomendationsExperienceLeft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10.688rem;
+    /* 171px divided by the root font size */
+    margin-bottom: 14rem;
+    /* 224px divided by the root font size */
+    margin-left: 3.75rem;
+}
+
+.RecomendationsExperienceLeft strong {
+    font-family: 'Sora';
+    font-weight: 400;
+    font-size: 1.125rem;
+    letter-spacing: 0.16em;
+    color: #FFFFFF;
+}
+
+.RecomendationsExperienceLeft h2 {
+    font-family: 'Sora';
+    font-weight: 700;
+    font-size: 2.8125rem;
+    color: #FFFFFF;
+    margin-bottom: 3.125rem;
+}
+
+.RecomendationsExperienceLeft p {
+    max-width: 29.375rem;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    color: #EAEAEA;
+}
+
+.RecomendationsExpereienceLeft small {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
+    color: #EAEAEA;
+}
+
+.RecomendationsExperienceRight {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 18.75rem;
+    margin-bottom: 27.8125rem;
+}
+
+.RecomendationsExperienceRight h2 {
+    font-family: 'Sora';
+    font-weight: 700;
+    font-size: 4.375rem;
+    text-align: justify;
+}
+
+.RecomendationsExperienceRight small {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #EAEAEA;
+}
