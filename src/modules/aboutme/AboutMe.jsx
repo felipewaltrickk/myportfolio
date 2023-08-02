@@ -1,12 +1,14 @@
 import React from 'react'
 import styles from './Aboutme.module.css'
-import imageAboutMe from '../../assets/img/img-pessoal.png'
+import imageFernando from '../../assets/img/img-pessoal.png'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 export const AboutMe = () => {
   return (
     <div className={styles.AboutMeContainer}>
       <div className={styles.AboutMeLeft}>
-        <img src={imageAboutMe} alt="" />
+        <img src={imageFernando} alt="" />
       </div>
       <div className={styles.AboutMeRight}>
         <h2>Over 400 <br />

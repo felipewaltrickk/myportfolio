@@ -1,7 +1,7 @@
 .Escriba2Container {
     display: flex;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background: linear-gradient(113.64deg, #E4B32F 19.58%, #FED439 51.67%);
 }
 

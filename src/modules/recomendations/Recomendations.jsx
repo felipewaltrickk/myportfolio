@@ -54,9 +54,7 @@ export const Recomendations = () => {
                     </p>
                 </div>
                 <div>
-                    <div className={styles.yearsExperience}>
-                        <strong>ABC</strong>
-                    </div>
+                    <p style={{zIndex:100}}>4+ <br/> Years of design and tech experience</p>
                     <div className={styles.imgRotate} style={{ transform: `rotate(${rotation}deg)` }} >
                         <img src={imgElipse} alt="" />
                     </div>

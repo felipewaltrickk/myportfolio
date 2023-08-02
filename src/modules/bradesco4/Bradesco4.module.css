@@ -1,7 +1,7 @@
 .Bradesco4Container {
     display: flex;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background: linear-gradient(113.64deg, #E1173E 19.58%, #2C49A8 84.55%);
 }
 
