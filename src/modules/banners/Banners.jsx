@@ -6,13 +6,19 @@ import frontEnd from '../../assets/img/frontEnd.png'
 import uxUi from '../../assets/img/uxUi.png'
 import software from '../../assets/img/software.png'
 import './Banners.css';
+import { Mousewheel, Pagination, Autoplay } from 'swiper/modules';
 
 export const Banners = () => {
   return (
     <div className='container'>
       <Swiper
         slidesPerView={'auto'}
+        mousewheel={true}
         className="mySwiper"
+        pagination={{
+          clickable: false,
+        }}
+        modules={[Mousewheel, Pagination]}
       >
         <SwiperSlide>
           <img src={productDesign} alt="" />
