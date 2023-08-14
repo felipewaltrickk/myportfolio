@@ -20,10 +20,11 @@ export const AboutMe = () => {
           isn't afraid to dream big and think outside the box, then you've come to the right place!
           <br />
           <br />
-          For me, life is too short for limitations and boring bureaucracies. My passion lies in collaborating with clients
-          that share the vision of exploring the unexplored, embracing the unknown, and being willing to create truly
-          revolutionary digital products. I don't settle for the obvious, which is why I'm always seeking challenges that
-          push me beyond conventional limits. With me by your side, we can surpass the mundane and achieve the extraordinary.
+          Step into the atelier of an avant-garde UX/UI designer, where design isn't just a skill, but a way of life.
+          I am driven by the belief that every pixel tells a story, and every interaction shapes an experience. 
+          My approach is a marriage of art and science, meticulously tailored to evoke emotions and simplify complexities. 
+          With an unwavering commitment to user-centered design, I'm your partner in creating digital narratives that resonate deeply.
+          Let's challenge the status quo, elevate your brand, and unveil a world of design that captivates, inspires, and leaves an indelible mark.
         </p>
         <div className={styles.ButtonContainer}>
           <button className={styles.BlueButton}>Download CV</button>
